@@ -1,0 +1,49 @@
+#######################################
+# Syntax Coloring Map For LCDIC2
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+LCDIC2	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+begin	KEYWORD2
+charAt	KEYWORD2
+clear	KEYWORD2
+cursorLeft	KEYWORD2
+cursorRight	KEYWORD2
+getCursor	KEYWORD2
+getGlyph	KEYWORD2
+home	KEYWORD2
+leftToRight	KEYWORD2
+moveLeft	KEYWORD2
+moveRight	KEYWORD2
+print	KEYWORD2
+rightToLeft	KEYWORD2
+setBacklight	KEYWORD2
+setBlink	KEYWORD2
+setCursor	KEYWORD2
+setDisplay	KEYWORD2
+setFont	KEYWORD2
+setGlyph	KEYWORD2
+setLines	KEYWORD2
+setShift	KEYWORD2
+
+##################################################
+# Built-in variables			(LITERAL2)
+##################################################
+
+backlight	LITERAL2
+blink	LITERAL2
+cursor	LITERAL2
+display	LITERAL2
+font	LITERAL2
+gain	LITERAL2
+height	LITERAL2
+shift	LITERAL2
+width	LITERAL2

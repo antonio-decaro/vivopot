@@ -1,0 +1,1299 @@
+[
+    {
+        "id": "43bb4fba46f7c388",
+        "type": "tab",
+        "label": "Vivopot",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "240d04028368432b",
+        "type": "tab",
+        "label": "Vivopot DB",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "178f5b2530017b8f",
+        "type": "mqtt-broker",
+        "name": "MQTT Server",
+        "broker": "127.0.0.1",
+        "port": "1883",
+        "clientid": "Noder-RED-Client",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "sessionExpiry": ""
+    },
+    {
+        "id": "32428ff1057ee968",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "3a6e822d7a6dc45b",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-dark",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#77bb41",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#4f7a28",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "reset": false
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#097479",
+                    "value": "#4f7a28",
+                    "edited": true
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#4f7a28",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#74b43b",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#555555",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#eeeeee",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#4f7a28",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Vivopot",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "icon",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "15b516f952c63d44",
+        "type": "ui_group",
+        "name": "Plant Status",
+        "tab": "32428ff1057ee968",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": true,
+        "className": ""
+    },
+    {
+        "id": "05b637681730e0d5",
+        "type": "ui_tab",
+        "name": "Settings",
+        "icon": "fa-cog",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "e9c3c6d066686e70",
+        "type": "ui_group",
+        "name": "Automatations",
+        "tab": "05b637681730e0d5",
+        "order": 1,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "706c45f72ae11bba",
+        "type": "ui_group",
+        "name": "Controllers",
+        "tab": "32428ff1057ee968",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "e4f2553980cbdbbf",
+        "type": "ui_group",
+        "name": "Threshold Settings",
+        "tab": "05b637681730e0d5",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": true,
+        "className": ""
+    },
+    {
+        "id": "694ea0eebbcd0c0e",
+        "type": "ui_spacer",
+        "z": "43bb4fba46f7c388",
+        "name": "spacer",
+        "group": "e4f2553980cbdbbf",
+        "order": 4,
+        "width": 6,
+        "height": 1
+    },
+    {
+        "id": "a1941e851f4c7333",
+        "type": "mqtt in",
+        "z": "43bb4fba46f7c388",
+        "name": "Airquality/IN",
+        "topic": "sensors/airquality/out",
+        "qos": "0",
+        "datatype": "utf8",
+        "broker": "178f5b2530017b8f",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 150,
+        "y": 200,
+        "wires": [
+            [
+                "3f97a96779587d66"
+            ]
+        ]
+    },
+    {
+        "id": "2ebf48c142c9e0bd",
+        "type": "mqtt in",
+        "z": "43bb4fba46f7c388",
+        "name": "Humidity/IN",
+        "topic": "sensors/humidity/out",
+        "qos": "0",
+        "datatype": "utf8",
+        "broker": "178f5b2530017b8f",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 150,
+        "y": 540,
+        "wires": [
+            [
+                "a6f49f9a9a0fe7a6"
+            ]
+        ]
+    },
+    {
+        "id": "4323e185f12cff8d",
+        "type": "mqtt in",
+        "z": "43bb4fba46f7c388",
+        "name": "Light/IN",
+        "topic": "sensors/light/out",
+        "qos": "0",
+        "datatype": "utf8",
+        "broker": "178f5b2530017b8f",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 130,
+        "y": 300,
+        "wires": [
+            [
+                "e15b7a7816990d4b",
+                "617108da7b06d058"
+            ]
+        ]
+    },
+    {
+        "id": "6a2c657a4cf7ae47",
+        "type": "mqtt in",
+        "z": "43bb4fba46f7c388",
+        "name": "Temperature/IN",
+        "topic": "sensors/temperature/out",
+        "qos": "0",
+        "datatype": "utf8",
+        "broker": "178f5b2530017b8f",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 160,
+        "y": 440,
+        "wires": [
+            [
+                "ef69694e90408429"
+            ]
+        ]
+    },
+    {
+        "id": "d10201a3ce846422",
+        "type": "mqtt in",
+        "z": "43bb4fba46f7c388",
+        "name": "Water/IN",
+        "topic": "sensors/water/out",
+        "qos": "0",
+        "datatype": "utf8",
+        "broker": "178f5b2530017b8f",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 140,
+        "y": 660,
+        "wires": [
+            [
+                "1582d9ee7aa32e7a",
+                "0841e82085ed8c16"
+            ]
+        ]
+    },
+    {
+        "id": "a6f49f9a9a0fe7a6",
+        "type": "ui_gauge",
+        "z": "43bb4fba46f7c388",
+        "name": "",
+        "group": "15b516f952c63d44",
+        "order": 2,
+        "width": 3,
+        "height": 3,
+        "gtype": "gage",
+        "title": "Humidity",
+        "label": "%",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "40",
+        "seg2": "60",
+        "className": "",
+        "x": 320,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "e15b7a7816990d4b",
+        "type": "ui_gauge",
+        "z": "43bb4fba46f7c388",
+        "name": "",
+        "group": "15b516f952c63d44",
+        "order": 5,
+        "width": 3,
+        "height": 3,
+        "gtype": "wave",
+        "title": "Light",
+        "label": "",
+        "format": "{{value}}",
+        "min": 0,
+        "max": 10,
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "className": "",
+        "x": 300,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "ef69694e90408429",
+        "type": "ui_gauge",
+        "z": "43bb4fba46f7c388",
+        "name": "",
+        "group": "15b516f952c63d44",
+        "order": 3,
+        "width": 3,
+        "height": 3,
+        "gtype": "gage",
+        "title": "Temperature",
+        "label": "˚C",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "30",
+        "seg2": "50",
+        "className": "",
+        "x": 330,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "617108da7b06d058",
+        "type": "function",
+        "z": "43bb4fba46f7c388",
+        "name": "Lights Actuator Controller",
+        "func": "var min = global.get(\"LightThreshold\");\nvar led_status = flow.get(\"led_status\");\n\nvar auto_lights = flow.get(\"auto_lights\");\nif (auto_lights !== undefined && !auto_lights) {\n    msg.forward = 0;\n    return msg;\n}\n\nvar send_status;\n\nvar val = parseInt(msg.payload);\nif (val === undefined || val === null) {\n    return;\n}\n\nmsg.forward = 0;\n\nif (val < min) {\n    msg.payload = 1;\n    send_status = true;\n} else {\n    msg.payload = 0;\n    send_status = false;\n}\n\nif ((!led_status && send_status) || (!send_status && led_status)){\n    msg.forward = 1;\n    flow.set(\"led_status\", !led_status);\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\nflow.set(\"led_status\", false);",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 300,
+        "wires": [
+            [
+                "aa7aaae7b0887c9c"
+            ]
+        ]
+    },
+    {
+        "id": "cef3bdc9a44eb950",
+        "type": "inject",
+        "z": "43bb4fba46f7c388",
+        "name": "Update Global Variables",
+        "props": [],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 210,
+        "y": 860,
+        "wires": [
+            [
+                "082d416a5fb0dbb0"
+            ]
+        ]
+    },
+    {
+        "id": "6e4deea578a9e5a8",
+        "type": "mqtt out",
+        "z": "43bb4fba46f7c388",
+        "name": "Light Actuator",
+        "topic": "actuators/led/in",
+        "qos": "0",
+        "retain": "true",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "178f5b2530017b8f",
+        "x": 770,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "cb640877d994b56b",
+        "type": "function",
+        "z": "43bb4fba46f7c388",
+        "name": "Water Actuator Controller",
+        "func": "var threshold = global.get(\"WaterThreshold\");\nvar water = msg.payload;\n\nvar auto_pump = flow.get(\"auto_pump\");\nif (auto_pump !== undefined && !auto_pump) {\n    msg.payload = 0;\n} else {\n    \n    if (water < threshold) {\n        msg.payload = 1;\n    } else {\n        msg.payload = 0;\n    }    \n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\n\nvar accumulator = 0;\nvar message_counter = 0;",
+        "finalize": "",
+        "libs": [],
+        "x": 710,
+        "y": 660,
+        "wires": [
+            [
+                "7ccced41bea7e983"
+            ]
+        ]
+    },
+    {
+        "id": "c4fc25fe3433b86e",
+        "type": "mqtt out",
+        "z": "43bb4fba46f7c388",
+        "name": "Pump Actuator",
+        "topic": "actuators/pump/in",
+        "qos": "0",
+        "retain": "false",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "178f5b2530017b8f",
+        "x": 1100,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "de053727c515eaec",
+        "type": "ui_form",
+        "z": "43bb4fba46f7c388",
+        "name": "",
+        "label": "Modify Threhsolds",
+        "group": "e4f2553980cbdbbf",
+        "order": 5,
+        "width": 6,
+        "height": 1,
+        "options": [
+            {
+                "label": "Water",
+                "value": "water_threshold",
+                "type": "number",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Light",
+                "value": "light_threshold",
+                "type": "number",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Temperature",
+                "value": "temperature_threshold",
+                "type": "number",
+                "required": false,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "water_threshold": "",
+            "light_threshold": "",
+            "temperature_threshold": ""
+        },
+        "payload": "",
+        "submit": "Submit",
+        "cancel": "Cancel",
+        "topic": "payload",
+        "topicType": "msg",
+        "splitLayout": "",
+        "className": "",
+        "x": 170,
+        "y": 1080,
+        "wires": [
+            [
+                "acd7d9aac8256034"
+            ]
+        ]
+    },
+    {
+        "id": "816e029afc005660",
+        "type": "link call",
+        "z": "43bb4fba46f7c388",
+        "name": "",
+        "links": [
+            "49c2d70f83a14134"
+        ],
+        "timeout": "30",
+        "x": 570,
+        "y": 1080,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "082d416a5fb0dbb0",
+        "type": "link call",
+        "z": "43bb4fba46f7c388",
+        "name": "",
+        "links": [
+            "0e373f75d319a80c"
+        ],
+        "timeout": "30",
+        "x": 450,
+        "y": 880,
+        "wires": [
+            [
+                "6f123de4cac8bb95",
+                "26f777a6eb500ac2",
+                "8617b818d3881477",
+                "3e53c389efdb782e",
+                "8c46240c44567608"
+            ]
+        ]
+    },
+    {
+        "id": "6f123de4cac8bb95",
+        "type": "function",
+        "z": "43bb4fba46f7c388",
+        "name": "Set Global Variables",
+        "func": "global.set(\"WaterThreshold\", msg.payload.water_threshold)\nglobal.set(\"LightThreshold\", msg.payload.light_threshold)\nglobal.set(\"TemperatureThreshold\", msg.payload.temperature_threshold)\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 720,
+        "y": 960,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "49d12cd4552ace6a",
+        "type": "watch",
+        "z": "43bb4fba46f7c388",
+        "name": "Vivopot DB Observer",
+        "files": "vivopot.data",
+        "recursive": "",
+        "x": 220,
+        "y": 900,
+        "wires": [
+            [
+                "082d416a5fb0dbb0"
+            ]
+        ]
+    },
+    {
+        "id": "26f777a6eb500ac2",
+        "type": "debug",
+        "z": "43bb4fba46f7c388",
+        "name": "File Content",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 690,
+        "y": 1000,
+        "wires": []
+    },
+    {
+        "id": "7ccced41bea7e983",
+        "type": "switch",
+        "z": "43bb4fba46f7c388",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "num"
+            },
+            {
+                "t": "gte",
+                "v": "1",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 910,
+        "y": 660,
+        "wires": [
+            [
+                "b58032047ab473ba"
+            ],
+            [
+                "c4fc25fe3433b86e",
+                "b58032047ab473ba"
+            ]
+        ]
+    },
+    {
+        "id": "aa7aaae7b0887c9c",
+        "type": "switch",
+        "z": "43bb4fba46f7c388",
+        "name": "",
+        "property": "forward",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "num"
+            },
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 580,
+        "y": 300,
+        "wires": [
+            [],
+            [
+                "6e4deea578a9e5a8",
+                "8841ddc772b23cce"
+            ]
+        ]
+    },
+    {
+        "id": "b58032047ab473ba",
+        "type": "debug",
+        "z": "43bb4fba46f7c388",
+        "name": "Pump Message",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1100,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "8841ddc772b23cce",
+        "type": "debug",
+        "z": "43bb4fba46f7c388",
+        "name": "Led Message",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 770,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "8617b818d3881477",
+        "type": "ui_text",
+        "z": "43bb4fba46f7c388",
+        "group": "e4f2553980cbdbbf",
+        "order": 1,
+        "width": 6,
+        "height": 1,
+        "name": "Water Threshold",
+        "label": "Water",
+        "format": "{{msg.payload.water_threshold}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 700,
+        "y": 840,
+        "wires": []
+    },
+    {
+        "id": "3e53c389efdb782e",
+        "type": "ui_text",
+        "z": "43bb4fba46f7c388",
+        "group": "e4f2553980cbdbbf",
+        "order": 2,
+        "width": 6,
+        "height": 1,
+        "name": "Light Threshold",
+        "label": "Light (0/10)",
+        "format": "{{msg.payload.light_threshold}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 700,
+        "y": 880,
+        "wires": []
+    },
+    {
+        "id": "8c46240c44567608",
+        "type": "ui_text",
+        "z": "43bb4fba46f7c388",
+        "group": "e4f2553980cbdbbf",
+        "order": 3,
+        "width": 6,
+        "height": 1,
+        "name": "Temperature Threshold",
+        "label": "Temperature (Celsius)",
+        "format": "{{msg.payload.temperature_threshold}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 730,
+        "y": 920,
+        "wires": []
+    },
+    {
+        "id": "07d5476ff70f9b41",
+        "type": "ui_switch",
+        "z": "43bb4fba46f7c388",
+        "name": "Auto Lights",
+        "label": "Automatic Lights",
+        "tooltip": "Use sensors to automatically detect when the plant needs artificial lights.",
+        "group": "e9c3c6d066686e70",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "auto_lights",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 330,
+        "y": 60,
+        "wires": [
+            [
+                "37c968f7f09dc03d",
+                "ae3b307053aa990e"
+            ]
+        ]
+    },
+    {
+        "id": "9e0680ca9712cbb5",
+        "type": "ui_switch",
+        "z": "43bb4fba46f7c388",
+        "name": "Auto Pump",
+        "label": "Automatic Pump",
+        "tooltip": "Use sensors to automatically select when the plant needs to be irrigated",
+        "group": "e9c3c6d066686e70",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "auto_pump",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 330,
+        "y": 140,
+        "wires": [
+            [
+                "ce67edeec3d4d78b"
+            ]
+        ]
+    },
+    {
+        "id": "a288c252ae684622",
+        "type": "inject",
+        "z": "43bb4fba46f7c388",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "x": 150,
+        "y": 100,
+        "wires": [
+            [
+                "07d5476ff70f9b41",
+                "9e0680ca9712cbb5"
+            ]
+        ]
+    },
+    {
+        "id": "37c968f7f09dc03d",
+        "type": "change",
+        "z": "43bb4fba46f7c388",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "auto_lights",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 530,
+        "y": 60,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ce67edeec3d4d78b",
+        "type": "change",
+        "z": "43bb4fba46f7c388",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "auto_pump",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 530,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "acd7d9aac8256034",
+        "type": "function",
+        "z": "43bb4fba46f7c388",
+        "name": "Input Filler",
+        "func": "if (msg.payload.water_threshold === undefined || msg.payload.water_threshold === null) {\n    msg.payload.water_threshold = global.get(\"WaterThreshold\");\n}\n\nif (msg.payload.light_threshold === undefined || msg.payload.light_threshold === null) {\n    msg.payload.light_threshold = global.get(\"LightThreshold\");\n}\n\nif (msg.payload.temperature_threshold === undefined || msg.payload.temperature_threshold === null) {\n    msg.payload.temperature_threshold = global.get(\"TemperatureThreshold\");\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 370,
+        "y": 1080,
+        "wires": [
+            [
+                "816e029afc005660"
+            ]
+        ]
+    },
+    {
+        "id": "31ad5f6ef083f836",
+        "type": "smooth",
+        "z": "43bb4fba46f7c388",
+        "name": "Water Mean",
+        "property": "payload",
+        "action": "mean",
+        "count": "100",
+        "round": "0",
+        "mult": "single",
+        "reduce": true,
+        "x": 490,
+        "y": 660,
+        "wires": [
+            [
+                "cb640877d994b56b",
+                "4be2e3e106ec119f"
+            ]
+        ]
+    },
+    {
+        "id": "4be2e3e106ec119f",
+        "type": "debug",
+        "z": "43bb4fba46f7c388",
+        "name": "Water Mean",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 710,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "1582d9ee7aa32e7a",
+        "type": "function",
+        "z": "43bb4fba46f7c388",
+        "name": "ParseInt",
+        "func": "msg.payload = parseInt(msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 300,
+        "y": 660,
+        "wires": [
+            [
+                "31ad5f6ef083f836"
+            ]
+        ]
+    },
+    {
+        "id": "ae3b307053aa990e",
+        "type": "function",
+        "z": "43bb4fba46f7c388",
+        "name": "",
+        "func": "if (!msg.payload) {\n    msg.payload = 0;\n} else {\n    var led_status = flow.get(\"led_status\");\n    if (led_status) {\n        msg.payload = 1;\n    } else {\n        msg.payload = 0;\n    }\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 500,
+        "y": 100,
+        "wires": [
+            [
+                "54b2fbe8a4c76561"
+            ]
+        ]
+    },
+    {
+        "id": "54b2fbe8a4c76561",
+        "type": "mqtt out",
+        "z": "43bb4fba46f7c388",
+        "name": "Light Actuator",
+        "topic": "actuators/led/in",
+        "qos": "0",
+        "retain": "true",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "178f5b2530017b8f",
+        "x": 720,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "0841e82085ed8c16",
+        "type": "ui_gauge",
+        "z": "43bb4fba46f7c388",
+        "name": "",
+        "group": "15b516f952c63d44",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "compass",
+        "title": "Water Level",
+        "label": "%",
+        "format": "{{value}}",
+        "min": 0,
+        "max": 10,
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "className": "",
+        "x": 310,
+        "y": 720,
+        "wires": []
+    },
+    {
+        "id": "3f97a96779587d66",
+        "type": "ui_gauge",
+        "z": "43bb4fba46f7c388",
+        "name": "",
+        "group": "15b516f952c63d44",
+        "order": 4,
+        "width": 3,
+        "height": 3,
+        "gtype": "compass",
+        "title": "Air Quality",
+        "label": "",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "500",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "className": "",
+        "x": 330,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "15670b7672a8d45e",
+        "type": "ui_button",
+        "z": "43bb4fba46f7c388",
+        "name": "Irrigate Button",
+        "group": "706c45f72ae11bba",
+        "order": 0,
+        "width": "0",
+        "height": "0",
+        "passthru": false,
+        "label": "Irrigate",
+        "tooltip": "Click here to action the pump",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "1",
+        "payloadType": "str",
+        "topic": "payload",
+        "topicType": "msg",
+        "x": 880,
+        "y": 580,
+        "wires": [
+            [
+                "c4fc25fe3433b86e"
+            ]
+        ]
+    },
+    {
+        "id": "49c2d70f83a14134",
+        "type": "link in",
+        "z": "240d04028368432b",
+        "name": "vivopot_db/update",
+        "links": [],
+        "x": 105,
+        "y": 200,
+        "wires": [
+            [
+                "5d406d8da8f2cb71"
+            ]
+        ]
+    },
+    {
+        "id": "0e373f75d319a80c",
+        "type": "link in",
+        "z": "240d04028368432b",
+        "name": "vivopot_db/retrive",
+        "links": [],
+        "x": 105,
+        "y": 100,
+        "wires": [
+            [
+                "708b345a3a8f6c58"
+            ]
+        ]
+    },
+    {
+        "id": "708b345a3a8f6c58",
+        "type": "file in",
+        "z": "240d04028368432b",
+        "name": "DB File",
+        "filename": "vivopot.data",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "utf8",
+        "allProps": false,
+        "x": 220,
+        "y": 100,
+        "wires": [
+            [
+                "25933ae31d84eb57"
+            ]
+        ]
+    },
+    {
+        "id": "720104711c5bcad3",
+        "type": "link out",
+        "z": "240d04028368432b",
+        "name": "",
+        "mode": "return",
+        "links": [],
+        "x": 435,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "bd56b04f54d23864",
+        "type": "file",
+        "z": "240d04028368432b",
+        "name": "DB File",
+        "filename": "vivopot.data",
+        "appendNewline": true,
+        "createDir": false,
+        "overwriteFile": "true",
+        "encoding": "utf8",
+        "x": 600,
+        "y": 160,
+        "wires": [
+            [
+                "b5946513f476a4b5"
+            ]
+        ]
+    },
+    {
+        "id": "b5946513f476a4b5",
+        "type": "link out",
+        "z": "240d04028368432b",
+        "name": "",
+        "mode": "return",
+        "links": [],
+        "x": 715,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "25933ae31d84eb57",
+        "type": "json",
+        "z": "240d04028368432b",
+        "name": "Json",
+        "property": "payload",
+        "action": "obj",
+        "pretty": false,
+        "x": 350,
+        "y": 100,
+        "wires": [
+            [
+                "720104711c5bcad3"
+            ]
+        ]
+    },
+    {
+        "id": "5d406d8da8f2cb71",
+        "type": "function",
+        "z": "240d04028368432b",
+        "name": "Input Validator",
+        "func": "msg.forward = 1;\n\nif (msg.payload.water_threshold < 10 || msg.payload.water_threshold > 100) {\n    msg.forward = 0;\n}\n\nif (msg.payload.temperature_threshold <= 0 || msg.payload.temperature_threshold > 50) {\n    msg.forward = 0;\n}\n\nif (msg.payload.light_threshold <= 0 || msg.payload.light_threshold >= 9) {\n    msg.forward = 0;\n}\n\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 260,
+        "y": 200,
+        "wires": [
+            [
+                "18bd8238d87be3c0"
+            ]
+        ]
+    },
+    {
+        "id": "18bd8238d87be3c0",
+        "type": "switch",
+        "z": "240d04028368432b",
+        "name": "",
+        "property": "forward",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "num"
+            },
+            {
+                "t": "neq",
+                "v": "1",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 430,
+        "y": 200,
+        "wires": [
+            [
+                "bd56b04f54d23864",
+                "a74e43cd103e10e2"
+            ],
+            [
+                "a74e43cd103e10e2"
+            ]
+        ]
+    },
+    {
+        "id": "a74e43cd103e10e2",
+        "type": "debug",
+        "z": "240d04028368432b",
+        "name": "Input",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 590,
+        "y": 200,
+        "wires": []
+    }
+]
